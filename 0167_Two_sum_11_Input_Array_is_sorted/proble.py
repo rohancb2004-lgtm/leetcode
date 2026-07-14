@@ -4,6 +4,7 @@ class Solution:
         j=len(numbers)-1
         while i<j:
             sum=numbers[i]+numbers[j]
+            #update the pointers based on the sum
             if sum==target:
                 return [i+1,j+1]
             elif sum>target:
